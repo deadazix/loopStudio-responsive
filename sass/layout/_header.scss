@@ -1,0 +1,41 @@
+.header{
+    background-color: red;
+    
+    &__img{
+        display: block;
+       
+        
+        img{
+            
+            width: 100%;
+            
+            display: block;
+            
+        }
+    }
+    
+    &__text-container{
+        position: absolute;
+        
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        @include res{
+            transform: translate(-100%,-30%);
+        }
+        
+        
+        &-text{
+            font-family: $font-family2;
+            color: $color-neu2;
+            text-transform: uppercase;
+            font-weight: 300;
+            border: 1px solid white;
+            padding: 2rem;
+            max-width: 40rem;
+            font-size: 4.2rem;
+            
+            
+        }
+    }
+}

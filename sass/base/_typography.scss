@@ -1,0 +1,33 @@
+body{
+    font-family: $font-family1;
+    font-size:$font-size-defualt;
+    font-weight:400;
+    
+}
+.heading-primary{
+    font-family: $font-family2;
+    font-weight: 300;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    // color: $Dark-Gray2;
+}
+.see{
+    font-family: $font-family1;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: black;
+    letter-spacing: 2px;
+    display: inline-block;
+    border: 1px solid;
+    padding: .5rem 3rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 2rem;
+    @include res{
+        display: none;
+    }
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}

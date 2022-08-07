@@ -1,0 +1,46 @@
+.vr{
+    
+    display: grid;
+    grid-template-columns: 1fr ;
+    @include res{
+        grid-template-columns: repeat(10,1fr);
+        align-items: flex-end;
+    }
+    
+    &>*:first-child{
+        @include res{
+            grid-column: 1/7;
+        }
+        
+    }
+    
+    
+    &__img{
+        width: 100%;
+        display: block;
+
+        img{
+            width: 100%;
+            display: block;
+            
+        }
+    
+    }
+    &__text{
+        padding: 4rem;
+        background-color: white;
+        @include res{
+            grid-column: 7/-1;
+            font-size: 1.2rem;
+            transform: translate(-20%);
+        }
+    }
+    &__paragraph{
+        z-index: 100000;
+
+        text-align: center;
+        color: $Dark-Gray1 !important;
+    }
+
+}
+
